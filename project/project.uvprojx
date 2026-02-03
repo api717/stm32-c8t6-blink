@@ -599,6 +599,11 @@
               <FileType>1</FileType>
               <FilePath>..\Hardware\drivers\src\BSP_uart.c</FilePath>
             </File>
+            <File>
+              <FileName>esp8266_uart_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\drivers\src\esp8266_uart_init.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -663,6 +668,11 @@
               <FileName>app_dht11.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\Application\Src\app_dht11.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_esp8266.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\Application\Src\app_esp8266.c</FilePath>
             </File>
           </Files>
         </Group>
