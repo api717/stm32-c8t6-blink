@@ -7,7 +7,7 @@ static void DHT11_Mode_Out_PP(void);
 static uint8_t DHT11_ReadByte(void);
 
 #define DHT11_DELAY_US(us)  delay_us(us)
-#define DHT11_DELAY_MS(ms)  delay_nms(ms)
+#define DHT11_DELAY_MS(ms)  delay_ms(ms)
  /**
   * @brief  DHT11 初始化函数
   * @param  无
@@ -72,7 +72,7 @@ static uint8_t DHT11_ReadByte (void)
 	{	 
 		/*每bit以50us低电平标置开始，轮询直到从机发出 的50us 低电平 结束*/  
 		while(DHT11_Dout_IN()==Bit_RESET);
-		DHT11_DELAY_US(40); // 延时x us 这个延时需要大于数据0 数据0大概 26-28us持续的时间即可	   	  
+		//DHT11_DELAY_US(40); // 延时x us 这个延时需要大于数据0 数据0大概 26-28us持续的时间即可	   	  
 
 		if(DHT11_Dout_IN()==Bit_SET)/* x us后仍为高电平表示数据“1” */
 		{
@@ -108,7 +108,7 @@ uint8_t DHT11_Read_TempAndHumidity(DHT11_Data_TypeDef *DHT11_Data)
 	/*总线拉高 主机延时30us*/
 	DHT11_Dout_1; 
 
-	DHT11_DELAY_US(30);   //延时30us
+	//DHT11_DELAY_US(30);   //延时30us
  
 	/*主机设为输入 判断从机响应信号*/ 
 	DHT11_Mode_IPU();

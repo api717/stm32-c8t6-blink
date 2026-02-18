@@ -10,9 +10,7 @@
 #include "Buzzer_init.h"
 #include "mq135_init.h"
 #include "DHT11_init.h"
-#include "esp_uart.h"
-#include "BSP_uart.h"
-
+#include "esp8266_uart_init.h"
 /*º¯ÊıÉùÃ÷*/
 void Hardware_Init(void);
 

@@ -11,7 +11,7 @@
 void LED_Flash(LED led,Frequency frequency)
 {
 		LED_Control(led,ON);
-		delay_nms(frequency);
+		delay_ms(frequency);
 		LED_Control(led,OFF);
-		delay_nms(frequency);
+		delay_ms(frequency);
 }

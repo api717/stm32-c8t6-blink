@@ -590,16 +590,6 @@
               <FilePath>..\Hardware\drivers\src\DHT11_init.c</FilePath>
             </File>
             <File>
-              <FileName>esp_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\drivers\src\esp_uart.c</FilePath>
-            </File>
-            <File>
-              <FileName>BSP_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\drivers\src\BSP_uart.c</FilePath>
-            </File>
-            <File>
               <FileName>esp8266_uart_init.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Hardware\drivers\src\esp8266_uart_init.c</FilePath>
@@ -623,6 +613,11 @@
               <FileName>usart_drv.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\public\src\usart_drv.c</FilePath>
+            </File>
+            <File>
+              <FileName>DWT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\public\src\DWT.c</FilePath>
             </File>
           </Files>
         </Group>

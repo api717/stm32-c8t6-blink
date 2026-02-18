@@ -72,7 +72,7 @@ void Oled_Write_Cmd(uint8_t cmd)
 
 void OLED_Init(void)
 {
-	delay_nms(100);
+	delay_ms(100);
     /* 设置显示打开/关闭
      * AE--->显示打开
      * AF--->显示关闭(休眠模式)

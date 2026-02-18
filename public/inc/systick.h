@@ -3,10 +3,9 @@
 
 
 #include "stm32f10x.h"
-void Systick_Init(u8 sysclk);
-void delay_ms(u32 n);
-void delay_us(u32 n);
-void delay_nms(u32 n);
+void Systick_Init(void);
+uint32_t millis(void);
+void delay_ms(uint32_t ms);
 
 #endif
 

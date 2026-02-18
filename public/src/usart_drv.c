@@ -76,8 +76,7 @@ void USART1_IRQHandler(void)
 	
 	//判断是那个中断源产生中断
 	//检查指定的 USART 中断发生与否 
-	//就是如果是USART_IT_RXNE产生中断 即有数据就会中断，
-	//
+	//就是如果是USART_IT_RXNE产生中断 即有数据就会中断
 	if(USART_GetITStatus(USART1,USART_IT_RXNE) == SET)
 	{
 		

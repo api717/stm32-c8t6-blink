@@ -55,7 +55,7 @@ void Mq135_ADC_Config(void)
 	ADC_RegularChannelConfig(ADCx, ADC_CHANNEL,1, ADC_SampleTime_55Cycles5);
 //	//校准（此时 ADC 和 DMA 都还没启动）
 	ADC_Cmd(ADCx, ENABLE);
-	delay_us(10);
+	//delay_us(10);
 	//ADC校准
 	ADC_ResetCalibration(ADCx);
 	while(ADC_GetResetCalibrationStatus(ADCx));

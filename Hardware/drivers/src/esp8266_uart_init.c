@@ -44,9 +44,7 @@ void USART2_Init(uint32_t baudrate)
 void USART2_NVIC_Config(void)
 {
     NVIC_InitTypeDef NVIC_InitStructure;
-    
-    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);  //视工程分组设置
-    
+  
     NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn;           //中断通道
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;   //抢占优先级（越小越高）
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;          //子优先级
@@ -76,11 +74,11 @@ void ESP8266_Reset(void)
 {
     GPIO_ResetBits(ESP_RST_PORT, ESP_RST_PIN);
     delay_ms(200);
-    GPIO_SetBits(ESP_RST_PORT, ESP_RST_PIN);
-    delay_nms(2000);     // 等待启动
+    GPIO_SetBits(ESP_RST_PORT, ESP_RST_PIN); 
+    delay_ms(2000);     //等待启动
 }
 
-//启用 ESP8266（CH_PD/EN 高电平有效）
+//启用ESP8266（CH_PD/EN 高电平有效）
 void ESP8266_Enable(void)
 {
     GPIO_SetBits(ESP_EN_PORT, ESP_EN_PIN);
